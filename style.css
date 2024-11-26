@@ -1,0 +1,59 @@
+/* setting font */
+html {
+    font-family: Arial, sans-serif;
+}
+
+/* flex display to center everything, and background color */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5A5A5A;
+}
+
+/* background color, grid for buttons and padding, borders etc */
+.calculatorBody {
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 5%;
+    padding: 1em;
+}
+
+/* making display look nice with border, margins and font size. and making it take up necessary grid columns and rows */
+input {
+    border: none;
+    margin: 1em;
+    grid-area: 1 / 1 / 1 / 5;
+    padding: 1em;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* making buttons look nice with border coloring, padding and margins */
+button {
+    border: none;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    color: white;
+    padding: 1em;
+    margin: 0.1em;
+    border-radius: 50%;
+}
+
+/* giving buttons different properties based on hover or clicked */
+button:hover {
+    background-color: lightgray;
+    border: 1px solid grey;
+    transition-duration: 0.1s;
+}
+
+button:active {
+    background-color: darkgray;
+    transition-duration: 0.1s;
+}
